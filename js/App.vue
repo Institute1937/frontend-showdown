@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <!-- <img src="./assets/logo.png"> -->
+    <div>im from vue!</div>
     <router-view></router-view>
   </div>
 </template>
