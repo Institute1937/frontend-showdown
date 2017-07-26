@@ -13,7 +13,7 @@ module.exports = options => {
       compress: true,
       port: 2002,
        historyApiFallback: {
-        index: 'hyperapp.html',
+        index: 'js/hyperapp/index.html',
       },
     },
     module: {
