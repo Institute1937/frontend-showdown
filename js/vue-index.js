@@ -1,10 +1,18 @@
-import { app, h } from 'hyperapp';
-/** @jsx h */
-import { Router } from "@hyperapp/router"
-import state from './state';
-import actions from './actions';
-import view from './views'
+// The Vue build version to load with the `import` command
+// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+import Vue from 'vue'
+import App from './App'
+// import router from './router'
+// import auth from './services/auth.js'
 
-import * as d3 from 'd3v4';
+Vue.config.productionTip = false
 
-app({ state, actions, view, mixins:[Router] })
+
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  // router,
+  template: '<App/>',
+  components: { App }
+})
