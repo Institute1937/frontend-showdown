@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = options => {
   return {
-    entry: './js/index.js',
+    entry: './js/hyperapp/index.js',
     output: {
       filename: 'bundle.js',
     },
