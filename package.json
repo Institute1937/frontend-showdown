@@ -6,6 +6,8 @@
   "scripts": {
     "hyperapp": "webpack-dev-server --host 0.0.0.0 --config webpack.hyperapp.config.js --env.dev",
     "vue": "webpack-dev-server --host 0.0.0.0 --config webpack.vue.config.js --env.dev",
+    "react": "webpack-dev-server --host 0.0.0.0 --config webpack.react.config.js --env.dev",
+    "elm": "webpack-dev-server --host 0.0.0.0 --config webpack.elm.config.js --env.dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
