@@ -6,7 +6,7 @@ function resolve (dir) {
 
 module.exports = options => {
   return {
-    entry: './js/vue-index.js',
+    entry: './js/vue/index.js',
     output: {
       filename: 'bundle.js',
     },
