@@ -12,7 +12,9 @@ module.exports = options => {
       contentBase: path.resolve(__dirname, './'),
       compress: true,
       port: 2003,
-      historyApiFallback: true
+      historyApiFallback: {
+        index: 'vue.html',
+      },
     },
     module: {
       rules: [{

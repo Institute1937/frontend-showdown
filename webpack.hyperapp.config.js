@@ -12,7 +12,9 @@ module.exports = options => {
       contentBase: path.resolve(__dirname, './'),
       compress: true,
       port: 2002,
-      historyApiFallback: true
+       historyApiFallback: {
+        index: 'hyperapp.html',
+      },
     },
     module: {
       rules: [{
