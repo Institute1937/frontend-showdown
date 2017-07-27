@@ -1,39 +1,53 @@
-const path = require('path');
+var path = require("path");
 
-function resolve (dir) {
-  return path.join(__dirname, '..', dir)
-}
+module.exports = {
+  entry: {
+    app: [
+      './src/index.js'
+    ]
+  },
 
-module.exports = options => {
-  return {
-    entry: './js/elm/index.js',
-    output: {
-      filename: 'bundle.js',
-    },
-        resolve: {
-      extensions: ['.js', '.vue', '.json'],
-      alias: {
-        'vue$': 'vue/dist/vue.esm.js',
-         '@': resolve('src')
-        }
-    },
-    devtool: 'source-map',
-    devServer: {
-      contentBase: path.resolve(__dirname, './'),
-      compress: true,
-      port: 2003,
-      historyApiFallback: {
-        index: 'elm.html',
+  output: {
+    path: path.resolve(__dirname + '/dist'),
+    filename: 'bundle.js',
+  },
+
+  module: {
+    rules: [
+      {
+        test: /\.(css|scss)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ]
       },
-    },
-    module: {
-      rules: [{
-        loader: 'babel-loader',
-      },{
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        // options: vueLoaderConfig
-      }],
-    },
-  }
-}
+      {
+        test:    /\.html$/,
+        exclude: /node_modules/,
+        loader:  'file-loader?name=[name].[ext]',
+      },
+      {
+        test:    /\.elm$/,
+        exclude: [/elm-stuff/, /node_modules/],
+        loader:  'elm-webpack-loader?verbose=true&warn=true',
+      },
+      {
+        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff',
+      },
+      {
+        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'file-loader',
+      },
+    ],
+
+    noParse: /\.elm$/,
+  },
+
+  devServer: {
+    inline: true,
+    stats: { colors: true },
+  },
+
+
+};
