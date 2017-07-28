@@ -4,13 +4,13 @@
   "description": "compare hyperapp, vue and react - and redux and mobx",
   "main": "index.js",
   "scripts": {
-    "hyperapp": "webpack-dev-server --host 0.0.0.0 --config webpack.hyperapp.config.js --env.dev",
-    "cycle": "webpack-dev-server --host 0.0.0.0 --config webpack.cycle.config.js --env.dev",
-    "vanilla": "webpack-dev-server --host 0.0.0.0 --config webpack.vanilla.config.js --env.dev",
-    "vue": "webpack-dev-server --host 0.0.0.0 --config webpack.vue.config.js --env.dev",
-    "react": "webpack-dev-server --host 0.0.0.0 --config webpack.react.config.js --env.dev",
-    "elm": "webpack-dev-server --host 0.0.0.0 --config webpack.elm.config.js --env.dev",
-    "clojurescript": "webpack-dev-server --host 0.0.0.0 --config webpack.clojurescript.config.js --env.dev",
+    "hyperapp": "webpack-dev-server --host 0.0.0.0 --config webpack.hyperapp.config.js --open --env.dev",
+    "cycle": "webpack-dev-server --host 0.0.0.0 --config webpack.cycle.config.js --open --env.dev",
+    "vanilla": "webpack-dev-server --host 0.0.0.0 --config webpack.vanilla.config.js --open --env.dev",
+    "vue": "webpack-dev-server --host 0.0.0.0 --config webpack.vue.config.js --open --env.dev",
+    "react": "webpack-dev-server --host 0.0.0.0 --config webpack.react.config.js --open --env.dev",
+    "elm": "webpack-dev-server --host 0.0.0.0 --config webpack.elm.config.js --open --env.dev",
+    "clojurescript": "webpack-dev-server --host 0.0.0.0 --config webpack.clojurescript.config.js --open --env.dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
