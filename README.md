@@ -18,6 +18,7 @@ TODO
 Add Frameworks
 ---------------
 [√] Hyperapp
+
 [√] Vue
 [ ] React
 [√] Cycle
@@ -38,6 +39,6 @@ ROUTING
 [√] Hyperapp
 [√] Vue
 [ ] React
-[] Cycle
-[] Elm
-[] Vanilla
+[ ] Cycle
+[ ] Elm
+[ ] Vanilla
