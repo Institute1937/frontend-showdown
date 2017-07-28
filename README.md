@@ -14,6 +14,7 @@ Instructions
 
 
 TODO
+---------------
 
 Add Frameworks
 ---------------
@@ -24,16 +25,16 @@ Add Frameworks
 [√] Elm<br>
 [√] Vanilla<br>
 
-State Management
+Add State Management
 ---------------
 [ ] Redux<br>
 [ ] Mobx<br>
 
-DOCKER
+Docker
 ---------------
 [ ] dockerize!
 
-ROUTING
+Add Routing
 ---------------
 [√] Hyperapp<br>
 [√] Vue<br>
