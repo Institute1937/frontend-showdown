@@ -25,6 +25,7 @@ module.exports = {
   //            :
   //            [new webpack.HotModuleReplacementPlugin()]
   // ),
+  devtool: 'source-map',
   devServer: {
     historyApiFallback: true,
     contentBase: './',

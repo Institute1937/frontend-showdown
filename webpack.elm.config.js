@@ -43,7 +43,7 @@ module.exports = {
 
     noParse: /\.elm$/,
   },
-
+  devtool: 'source-map',
   devServer: {
     inline: true,
     stats: { colors: true },

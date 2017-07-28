@@ -1,10 +1,11 @@
-import { app, h } from 'hyperapp';
-/** @jsx h */
-import { Router } from "@hyperapp/router"
-import state from './state';
-import actions from './actions';
-import view from './views'
+import {run} from '@cycle/run'
+import {makeDOMDriver} from '@cycle/dom'
+import {App} from './app'
 
-import * as d3 from 'd3v4';
+const main = App
 
-app({ state, actions, view, mixins:[Router] })
+const drivers = {
+  DOM: makeDOMDriver('#app')
+}
+
+run(main, drivers)
