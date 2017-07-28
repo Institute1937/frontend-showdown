@@ -17,18 +17,17 @@ TODO
 
 Add Frameworks
 ---------------
-[√] Hyperapp
-
-[√] Vue
-[ ] React
-[√] Cycle
-[√] Elm
-[√] Vanilla
+[√] Hyperapp<br>
+[√] Vue<br>
+[ ] React<br>
+[√] Cycle<br>
+[√] Elm<br>
+[√] Vanilla<br>
 
 State Management
 ---------------
-[ ] Redux
-[ ] Mobx
+[ ] Redux<br>
+[ ] Mobx<br>
 
 DOCKER
 ---------------
@@ -36,9 +35,9 @@ DOCKER
 
 ROUTING
 ---------------
-[√] Hyperapp
-[√] Vue
-[ ] React
-[ ] Cycle
-[ ] Elm
-[ ] Vanilla
+[√] Hyperapp<br>
+[√] Vue<br>
+[ ] React<br>
+[ ] Cycle<br>
+[ ] Elm<br>
+[ ] Vanilla<br>
