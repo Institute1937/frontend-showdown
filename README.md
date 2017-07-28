@@ -1,29 +1,44 @@
-Compare Technologies
+Frameworks
 ---------------
-Hyperapp, React, Vue, Redux, Mobx
+Hyperapp, React, Vue, CycleJS, Elm, VanillaJS
 
 Instructions
 ---------------
 
-* npm run hyperapp - runs on port 2002
+* npm run hyperapp
+* npm run react
+* npm run vue
+* npm run cycle
+* npm run elm
+* npm run vanilla
 
-ROADMAP
 
-CLIENT
+TODO
 ---------------
-[√] Hyperapp
-[ ] Vue
-[ ] React
-[ ] Redux
-[ ] Mobx
-[ ] Elm?
 
-SERVER
+Add Frameworks
 ---------------
-[ ] Clojure
-[ ] Elixir
+[√] Hyperapp<br>
+[√] Vue<br>
+[ ] React<br>
+[√] Cycle<br>
+[√] Elm<br>
+[√] Vanilla<br>
 
-DOCKER
+Add State Management
+---------------
+[ ] Redux<br>
+[ ] Mobx<br>
+
+Docker
 ---------------
 [ ] dockerize!
 
+Add Routing
+---------------
+[√] Hyperapp<br>
+[√] Vue<br>
+[ ] React<br>
+[ ] Cycle<br>
+[ ] Elm<br>
+[ ] Vanilla<br>
